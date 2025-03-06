@@ -11,6 +11,10 @@
 
     <!-- Cabeçalho -->
     <header>
+        <!-- Logo clicável -->
+        <a href="#" class="logo-link">
+            <img src="imagens/logo.png" alt="Logo do Cartão Saúde Fácil" class="logo">
+        </a>
         <h1>Cartão Saúde Fácil</h1>
         <p>O melhor cartão de benefícios para você e sua família</p>
     </header>
@@ -92,21 +96,80 @@
     <!-- Formulário de Contato -->
     <section class="contact-form" id="contato">
         <h2>Entre em Contato</h2>
-        <form id="formContato" action="https://example.com" method="POST">
+        <form id="formContato" method="post" action="envia.php">
             <input type="text" name="nome" placeholder="Seu Nome" required>
             <input type="email" name="email" placeholder="Seu E-mail" required>
             <textarea name="mensagem" placeholder="Sua Mensagem" rows="5" required></textarea>
             <input type="submit" value="Enviar Mensagem">
         </form>
-        <!-- Mensagem de confirmação -->
-        <p id="mensagemEnviada" style="display: none; color: green;">Sua mensagem foi enviada com sucesso!</p>
     </section>
 
     <!-- Botão WhatsApp -->
     <a href="https://wa.me/5599999999999" target="_blank" class="whatsapp-button">
         <img src="imagens/whatsapp-icon.png" alt="WhatsApp">
     </a>
-
+    <section class="faq">
+        <h2>Dúvidas Frequentes</h2>
+        
+        <div class="faq-item">
+            <h3>Produtos Ofertados pelo Cartão Saúde Fácil</h3>
+            <p>O Cartão Saúde Fácil oferece descontos em consultas médicas, exames laboratoriais, atendimento odontológico e outros serviços de saúde.</p>
+        </div>
+    
+        <div class="faq-item">
+            <h3>Qual a diferença entre o Cartão Saúde Fácil e um plano de saúde?</h3>
+            <p>O Cartão Saúde Fácil não é um plano de saúde. Ele oferece descontos em serviços médicos e odontológicos, sem burocracia, mensalidades altas ou carências.</p>
+        </div>
+    
+        <div class="faq-item">
+            <h3>Como adquirir um Cartão Saúde Fácil?</h3>
+            <p>Para adquirir o cartão, basta acessar nosso site, escolher o plano desejado e preencher o formulário de adesão.</p>
+        </div>
+    
+        <div class="faq-item">
+            <h3>Quais especialidades estão disponíveis?</h3>
+            <p>Oferecemos diversas especialidades médicas, incluindo cardiologia, pediatria, dermatologia, oftalmologia e muito mais.</p>
+        </div>
+    
+        <div class="faq-item">
+            <h3>Como usar o cartão para obter descontos em saúde?</h3>
+            <p>Apresente o seu Cartão Saúde Fácil em clínicas e consultórios credenciados para obter descontos exclusivos.</p>
+        </div>
+    
+        <div class="faq-item">
+            <h3>Para quem o cartão é destinado?</h3>
+            <p>O cartão é destinado a qualquer pessoa que deseja ter acesso a serviços médicos e odontológicos com preços reduzidos.</p>
+        </div>
+    
+        <div class="faq-item">
+            <h3>Até quantos dependentes posso incluir?</h3>
+            <p>Você pode incluir até 4 dependentes em seu plano, proporcionando benefícios para toda a família.</p>
+        </div>
+    
+        <div class="faq-item">
+            <h3>Quais serviços estão cobertos em nossa assinatura?</h3>
+            <p>Nossa assinatura cobre consultas médicas, exames laboratoriais, atendimento odontológico, fisioterapia e muito mais.</p>
+        </div>
+    
+        <div class="faq-item">
+            <h3>Posso cancelar a qualquer momento?</h3>
+            <p>Sim, você pode cancelar sua assinatura a qualquer momento sem burocracia.</p>
+        </div>
+    </section>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const faqItems = document.querySelectorAll(".faq-item h3");
+    
+            faqItems.forEach(item => {
+                item.addEventListener("click", function () {
+                    const answer = this.nextElementSibling;
+    
+                    // Alternar exibição da resposta
+                    answer.style.display = answer.style.display === "block" ? "none" : "block";
+                });
+            });
+        });
+    </script>
     <!-- Rodapé -->
     <footer>
         <p>&copy; 2025 Cartão Saúde Fácil. Todos os direitos reservados.</p>
@@ -121,18 +184,6 @@
             </a>
         </div>
     </footer>
-
-    <script>
-        // Exibir mensagem de confirmação após o envio do formulário
-        document.getElementById("formContato").addEventListener("submit", function(event) {
-            event.preventDefault();
-            document.getElementById("mensagemEnviada").style.display = "block";
-            setTimeout(() => {
-                document.getElementById("mensagemEnviada").style.display = "none";
-            }, 5000);
-            this.reset();
-        });
-    </script>
 
 </body>
 </html>
