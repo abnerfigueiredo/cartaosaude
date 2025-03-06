@@ -426,5 +426,7 @@ header .logo {
     transform: translateY(-50%);
     max-height: 80px; /* Ajuste a altura da logo conforme necessário */
     cursor: pointer;
+    z-index: 10; /* Garante que a logo fique acima de outros elementos */
     
 }
+
