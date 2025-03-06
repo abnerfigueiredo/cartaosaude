@@ -15,7 +15,7 @@ body {
 
 /* Cabeçalho */
 header {
-    background-color: #00bcd4;
+    background-color: #042c44;
     color: white;
     padding: 40px 20px;
     text-align: center;
@@ -34,7 +34,7 @@ header p {
 
 /* Navegação */
 nav {
-    background-color: #00838f;
+    background-color: #04aa93;
     text-align: center;
     padding: 15px 0;
     position: sticky;
@@ -53,8 +53,8 @@ nav a {
 }
 
 nav a:hover {
-    color: #ffab40;
-    border-bottom: 2px solid #ffab40;
+    color: #f27d10;
+    border-bottom: 2px solid #f27d10;
 }
 
 /* Seção Principal */
@@ -70,7 +70,7 @@ nav a:hover {
 
 .main-content h2 {
     font-size: 2.5em;
-    color: #00bcd4;
+    color: #04aa93;
     margin-bottom: 20px;
 }
 
@@ -82,7 +82,7 @@ nav a:hover {
 
 /* Botão de chamada */
 .cta-button {
-    background-color: #ff9800;
+    background-color: #f27d10;
     color: white;
     padding: 15px 30px;
     font-size: 1.2em;
@@ -99,51 +99,53 @@ nav a:hover {
     transform: translateY(-3px);
 }
 
-/* Seção de Serviços - GRID */
+/* Seção de Serviços - GRID (Atualizado) */
 .services {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Grid responsivo */
-    gap: 20px;
+    gap: 30px;
     margin: 60px auto;
     padding: 0 20px;
     max-width: 1200px;
 }
 
 .services h2 {
-    font-size: 2em;
-    color: #00bcd4;
+    font-size: 2.5em;
+    color: #04aa93;
     text-align: center;
     margin-bottom: 30px;
 }
 
 .service {
     background-color: #ffffff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .service:hover {
-    transform: translateY(-10px);
+    transform: translateY(-8px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .service img {
     width: 80px;
     height: 80px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .service h3 {
-    font-size: 1.5em;
-    color: #00bcd4;
-    margin-bottom: 15px;
+    font-size: 1.8em;
+    color: #04aa93;
+    margin-bottom: 20px;
 }
 
 .service p {
-    font-size: 1em;
+    font-size: 1.1em;
     color: #555;
+    margin-bottom: 20px;
 }
 
 /* Responsividade para telas menores */
@@ -172,7 +174,7 @@ nav a:hover {
 
 .contact-form h2 {
     font-size: 2em;
-    color: #00bcd4;
+    color: #04aa93;
     margin-bottom: 20px;
 }
 
@@ -187,12 +189,12 @@ nav a:hover {
 }
 
 .contact-form input:focus, .contact-form textarea:focus {
-    border-color: #00bcd4;
+    border-color: #04aa93;
     outline: none;
 }
 
 .contact-form input[type="submit"] {
-    background-color: #ff9800;
+    background-color: #f27d10;
     color: white;
     border: none;
     cursor: pointer;
@@ -240,26 +242,9 @@ nav a:hover {
     height: 50px;
 }
 
-.whatsapp-button:hover::after {
-    content: "Fale Conosco";
-    position: absolute;
-    bottom: 70px;
-    right: 0;
-    background-color: #333;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 0.9em;
-    white-space: nowrap;
-}
-
-.whatsapp-button:hover {
-    transform: scale(1.3);
-}
-
 /* Rodapé */
 footer {
-    background-color: #00bcd4;
+    background-color: #042c44;
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -356,7 +341,7 @@ footer p {
     }
     
     button[type="submit"] {
-        background-color: #00bcd4;
+        background-color: #04aa93;
         color: white;
         padding: 15px 30px;
         border: none;
@@ -369,4 +354,77 @@ footer p {
     button[type="submit"]:hover {
         background-color: #0097a7;
     }
+}
+
+/* Estilos para a Seção de FAQ */
+.faq {
+    margin: 60px auto;
+    padding: 30px 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+}
+
+.faq h2 {
+    font-size: 2.5em;
+    color: #04aa93;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.faq-item {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.faq-item:hover {
+    background-color: #e0f7fa;
+    transform: translateY(-5px);
+}
+
+.faq-item h3 {
+    font-size: 1.5em;
+    color: #04aa93;
+    margin-bottom: 15px;
+}
+
+.faq-item p {
+    font-size: 1.1em;
+    color: #555;
+    display: none;
+    transition: display 0.3s ease;
+}
+
+/* Estilo de exibição da resposta */
+.faq-item.active p {
+    display: block;
+}
+
+/* Responsividade para o FAQ */
+@media (max-width: 768px) {
+    .faq h2 {
+        font-size: 2.2em;
+    }
+
+    .faq-item h3 {
+        font-size: 1.5em;
+    }
+
+    .faq-item p {
+        font-size: 1em;
+    }
+}
+header .logo {
+    position: absolute;
+    left: 20px;
+    top: 10%;
+    transform: translateY(-50%);
+    max-height: 80px; /* Ajuste a altura da logo conforme necessário */
+    cursor: pointer;
+    
 }
