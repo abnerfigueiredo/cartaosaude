@@ -430,11 +430,6 @@ header {
 
 header .logo-link {
     display: block;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 30px;
-    left: 30px;
     margin: 0 auto;
     max-width: 300px; /* Ajuste o tamanho máximo da logo conforme necessário */
     text-align: center;
