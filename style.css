@@ -428,7 +428,7 @@ header .logo {
 @media (max-width: 768px) {
     header .logo-link {
         position: static; /* Remove o posicionamento absoluto */
-        margin-bottom: 10px; /* Adiciona uma margem inferior para separação */
+        margin-bottom: 40px; /* Adiciona uma margem inferior para separação */
         text-align: center; /* Centraliza a logo no cabeçalho */
     }
 
