@@ -456,3 +456,89 @@ header .logo {
         height: auto; /* Garante que a altura seja proporcional ao tamanho da largura */
     }
 }
+/* Banner de Planos Mensais */
+.plans-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: #04aa93;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.plan {
+    background-color: #042c44;
+    padding: 15px 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    width: 280px;
+}
+
+.plan:hover {
+    transform: translateY(-5px);
+}
+
+/* Títulos dos planos */
+.plan h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #f27d10;
+}
+
+/* Preço */
+.plan p {
+    font-size: 1.4em;
+}
+
+/* Descrição oculta por padrão */
+.plan-description {
+    position: absolute;
+    bottom: -300%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    color: #042c44;
+    padding: 15px;
+    font-size: 13px;
+    font-weight: normal;
+    transition: bottom 0.3s ease-in-out;
+    text-align: center;
+    border-top: 3px solid #f27d10;
+}
+
+/* Exibe a descrição ao passar o mouse */
+.plan:hover .plan-description {
+    bottom: 0;
+}
+
+/* Banner de Desconto */
+.discount-banner {
+    background-color: #f27d10;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 260px;
+    text-transform: uppercase;
+    transition: transform 0.3s ease;
+}
+
+.discount-banner:hover {
+    transform: translateY(-5px);
+}
+
+/* Destaque na porcentagem */
+.discount-banner span {
+    font-size: 50px;
+    color: #042c44;
+}
