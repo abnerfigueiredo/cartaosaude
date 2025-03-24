@@ -460,9 +460,10 @@ header .logo {
 /* Banner de Planos Mensais */
 .plans-banner {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
     background-color: #04aa93;
     padding: 20px;
     color: white;
@@ -542,4 +543,34 @@ header .logo {
 .discount-banner span {
     font-size: 50px;
     color: #042c44;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .plans-banner {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    .plan, .discount-banner {
+        width: 90%;
+        max-width: 320px;
+    }
+    
+    .plan h3 {
+        font-size: 1.5em;
+    }
+    
+    .plan p {
+        font-size: 1.2em;
+    }
+    
+    .discount-banner {
+        font-size: 18px;
+    }
+    
+    .discount-banner span {
+        font-size: 40px;
+    }
 }
